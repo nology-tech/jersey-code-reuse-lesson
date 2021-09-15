@@ -1,0 +1,19 @@
+{
+  "name": "code-reuse",
+  "version": "1.0.0",
+  "description": "A demo using npm and packages",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "sass --watch main.scss main.css"
+  },
+  "author": "Charlie Richardson",
+  "license": "ISC",
+  "dependencies": {
+    "canvas-confetti": "^1.4.0",
+    "chart.js": "^3.5.1"
+  },
+  "devDependencies": {
+    "sass": "^1.41.0"
+  }
+}
