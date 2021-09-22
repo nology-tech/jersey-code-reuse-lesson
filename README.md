@@ -14,8 +14,8 @@ This is code along from the npm lesson. In the lesson we cover npm, package.json
 Clone the repo
 
 ```bash
-git clone
-cd
+git clone https://github.com/nology-tech/jersey-code-reuse-lesson.git
+cd jersey-code-reuse-lesson
 ```
 
 Install the dependencies the project needs.
