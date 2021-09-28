@@ -1,9 +1,9 @@
 // DEFAULT IMPORT -> BRING IN ONE ITEM / OBJECT FROM ANOTHER FILE
-import confetti from "./node_modules/canvas-confetti/dist/confetti.module.mjs";
-
+import confetti from "canvas-confetti";
+import Chart from "chart.js/auto";
 // NAMED IMPORT -> MULTIPLE ITEM / VARIABLES FROM ANOTHER FILE
 import { cities, population, customData } from "./data/data.js";
-
+import "./scss/main.scss";
 // YOU CAN USE THE ^^ ABOVE IN YOUR CODE NOW
 console.log(cities);
 console.log(population);
@@ -26,7 +26,6 @@ const confettiOptions = {
 button.addEventListener("click", () => {
   confetti(confettiOptions);
 });
-
 
 // -------------------
 // CHART.JS
@@ -69,14 +68,14 @@ const myChart = new Chart(canvasHTML, {
   },
 });
 
-// CHALLENGE 1 
+// CHALLENGE 1
 // MAKE GREEN 25 & PURPLE 22 ON THE GRAPH
 // REMOVE THE ORANGE BAR -> ITS GOTTA GO
 // RENAME THE RED LABEL TO PINK AND CHANGE THE BACKGROUND AND BORDER COLOUR
 // EXT CONFETTI FIRES WHEN YOU CLICK ON THE CHART
 
 // CHALLENGE 2
-// Build a dashboard that has at least 3 graphs on it. 
+// Build a dashboard that has at least 3 graphs on it.
 // 1 should use the population data displayed on the graph
 // 1 should use the cities data displayed on the graph
 // The third is up to you,create your own data, you need to import the data from your data folder though.
@@ -125,7 +124,6 @@ const cityGraph = new Chart(cityGraphHTML, citySettings);
 // -------------------
 // POPULATION
 
-
 const populationDataset = population.map(el => {
   return el.amountOfPeople;
 });
@@ -173,7 +171,6 @@ const customDataSettings = {
         fill: true,
         backgroundColor: "#57cc998a",
         pointBackgroundColor: "#22577A",
-        
       },
       {
         label: "Skills",

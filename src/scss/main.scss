@@ -1,0 +1,40 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: #22577a;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+h1,
+h2,
+button {
+  grid-column: 1 / -1;
+}
+
+#myChart {
+  grid-column: 1 / -1;
+}
+
+#cities {
+  grid-column: 1 / 8;
+}
+
+#population {
+  grid-column: 8 / 13;
+}
+
+#custom-data {
+  grid-column: 2 / 12;
+}
